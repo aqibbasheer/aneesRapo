@@ -1,0 +1,48 @@
+{
+  "booking": [],
+  "Doctors": [
+    {
+      "email": "khubebe@123.com",
+      "name": "khubeb",
+      "password": "123123",
+      "phone": "03002255666",
+      "role": "Doctor",
+      "id": 1
+    },
+    {
+      "email": "aqibbasheer1078@gmail.com",
+      "password": "123123",
+      "role": "Doctor",
+      "phone": "03005546634",
+      "name": "Aqib basheer",
+      "id": 2
+    }
+  ],
+  "Patiants": [
+    {
+      "email": "hamza@123.com",
+      "password": "123123",
+      "role": "patient",
+      "phone": "03002255654",
+      "name": "hamza",
+      "id": 1
+    },
+    {
+      "email": "ameen@123.com",
+      "password": "123123",
+      "role": "patient",
+      "phone": "03002255654",
+      "name": "ameen",
+      "id": 2
+    },
+    {
+      "email": "aqib@123.com",
+      "password": "123123",
+      "role": "patient",
+      "phone": "03075885075",
+      "name": "aqib",
+      "id": 3
+    }
+  ],
+  "profile": {}
+}

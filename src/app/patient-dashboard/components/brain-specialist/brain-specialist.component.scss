@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .customer-profile {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .customer-profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .customer-profile-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .customer-profile-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .customer-profile-label {
+    flex: 1;
+    font-weight: bold;
+  }
+  
+  .customer-profile-value {
+    flex: 2;
+  }
+  

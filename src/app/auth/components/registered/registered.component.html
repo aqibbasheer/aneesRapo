@@ -1,0 +1,51 @@
+<div>
+    <mat-card>
+        <mat-card-header>
+           <mat-label class="label">Signup</mat-label>
+        </mat-card-header>
+
+        <mat-card-content>
+           <form [formGroup]="signupform" (ngSubmit)="signupDetails()">
+            
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Full Name</mat-label>
+                <input matInput #email type="text" formControlName="name" name="name">
+              </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput #email type="email" formControlName="email" name="email">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input matInput #email type="tel" formControlName="phone" name="phone">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput #password type="password" formControlName="password" name="password">
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Select Role</mat-label>
+                <mat-select formControlName="role" name="role">
+                  <mat-option value="Doctor">Doctor</mat-option>
+                  <mat-option value="patient">Patient</mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <button  type="submit" class="btn">signup</button>
+
+              
+           </form>
+           
+              <span>
+                <label for="" class="label2"> have an account</label>
+                <button class="btn2" (click)="routeToLogin()">Login</button>
+              </span>
+              
+        </mat-card-content>
+
+    </mat-card>
+</div>

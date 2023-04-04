@@ -1,0 +1,9 @@
+<mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+      <span>Wellcome</span>
+      <span class="example-spacer"></span>
+      <mat-icon (click)="logout()">logout</mat-icon>
+      
+      <mat-icon (click)="logout()" *ngIf="data">logout</mat-icon>
+
+    </mat-toolbar-row>

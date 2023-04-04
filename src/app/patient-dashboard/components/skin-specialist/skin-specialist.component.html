@@ -1,0 +1,70 @@
+<mat-card>
+    <mat-card-header> </mat-card-header>
+    <mat-card-content>
+        <div class="detailDiv1">
+            <div class="div2">
+                <div><img src="assets/dr.jpg" class="img" /></div>
+                <div>
+                    <h2>Dr Hinna Perwaiz</h2>
+                    <span class="span">
+                        <label for="">Dermatologist, Cosmetologist</label>
+                        <label for=""> MBBS, FCPS (Dermatology)</label>
+                    </span>
+                </div>
+            </div>
+
+            <div class="btndiv">
+                <button (click)="opendilaog()">book appointment</button>
+            </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap">
+            <div class="div-footer">
+                <label for="">Alpha Clinic Islamabad</label>
+                <a>Available from mon to tue</a>
+                <label for="" class="l">Fee Rs:2000</label>
+            </div>
+
+            <div class="div-footer">
+                <label for="">Alpha Clinic Islamabad</label>
+                <a>Available from mon to tue</a>
+                <label for="" class="l">Fee Rs:2000</label>
+            </div>
+
+            <div class="div-footer">
+                <label for="">Alpha Clinic Islamabad</label>
+                <a>Available from mon to tue</a>
+                <label for="" class="l">Fee Rs:2000</label>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-footer> </mat-card-footer>
+</mat-card>
+
+<ng-template #opendialog>
+<div>
+    <form class="form2" [formGroup]="dialogdata" (ngSubmit)="submit()">
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Full name</mat-label>
+            <input matInput #email type="text" formControlName="name" name="name" autocomplete="off">
+          </mat-form-field>
+    
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input matInput #password type="tel" formControlName="phone" name="phone" autocomplete="off">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+         
+          <button  mat-dialog-close>close</button>
+          <button type="submit">submit</button>
+    
+          
+       </form>
+</div>
+</ng-template>
